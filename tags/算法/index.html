@@ -6,29 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>小记：浅谈ZKW线段树 | 信风吹絮的博客</title>
+  <title>Tag: 算法 | 信风吹絮的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="PART 1：ZKW线段树的建立我们观察一下递归式线段树的代码，很容易就会发现：无论是建树、修改还是查询，都是自顶向下的。 zkw线段树则正好反过来，即自底向上 具体来说，就是先把线段树填充成满二叉树（堆式存储），之后就可以直接找到叶节点，然后回溯上去了 听起来好像很简单QwQ 其实真的很简单QwQ">
-<meta property="og:type" content="article">
-<meta property="og:title" content="小记：浅谈ZKW线段树">
-<meta property="og:url" content="http://example.com/2020/09/05/%E5%B0%8F%E8%AE%B0%EF%BC%9A%E6%B5%85%E8%B0%88ZKW%E7%BA%BF%E6%AE%B5%E6%A0%91/index.html">
+  <meta name="description" content="个人技术博客">
+<meta property="og:type" content="website">
+<meta property="og:title" content="信风吹絮的博客">
+<meta property="og:url" content="http://example.com/tags/%E7%AE%97%E6%B3%95/index.html">
 <meta property="og:site_name" content="信风吹絮的博客">
-<meta property="og:description" content="PART 1：ZKW线段树的建立我们观察一下递归式线段树的代码，很容易就会发现：无论是建树、修改还是查询，都是自顶向下的。 zkw线段树则正好反过来，即自底向上 具体来说，就是先把线段树填充成满二叉树（堆式存储），之后就可以直接找到叶节点，然后回溯上去了 听起来好像很简单QwQ 其实真的很简单QwQ">
+<meta property="og:description" content="个人技术博客">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://cdn.luogu.com.cn/upload/image_hosting/w41kyrsa.png">
-<meta property="og:image" content="https://cdn.luogu.com.cn/upload/image_hosting/d5j5mpf6.png">
-<meta property="og:image" content="https://cdn.luogu.com.cn/upload/image_hosting/b2gdowp0.png">
-<meta property="og:image" content="https://cdn.luogu.com.cn/upload/image_hosting/ba1ez5vx.png">
-<meta property="og:image" content="https://cdn.luogu.com.cn/upload/image_hosting/yod6r60a.png">
-<meta property="og:image" content="https://cdn.luogu.com.cn/upload/image_hosting/yod6r60a.png">
-<meta property="article:published_time" content="2020-09-05T12:12:37.000Z">
-<meta property="article:modified_time" content="2020-09-06T03:24:04.782Z">
 <meta property="article:author" content="信风吹絮">
-<meta property="article:tag" content="小记">
-<meta property="article:tag" content="算法">
-<meta property="article:tag" content="线段树">
+<meta property="article:tag" content="信息学 技术记录">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://cdn.luogu.com.cn/upload/image_hosting/w41kyrsa.png">
   
     <link rel="alternative" href="/atom.xml" title="信风吹絮的博客" type="application/atom+xml">
   
@@ -169,105 +158,36 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-小记：浅谈ZKW线段树" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      小记：浅谈ZKW线段树
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2020" class="archive-year">2020</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2020/09/05/%E5%B0%8F%E8%AE%B0%EF%BC%9A%E6%B5%85%E8%B0%88ZKW%E7%BA%BF%E6%AE%B5%E6%A0%91/" class="archive-article-date">
+  	<time datetime="2020-09-05T12:12:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-09-05</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2020/09/05/%E5%B0%8F%E8%AE%B0%EF%BC%9A%E6%B5%85%E8%B0%88ZKW%E7%BA%BF%E6%AE%B5%E6%A0%91/">小记：浅谈ZKW线段树</a>
     </h1>
   
 
-        <!--显示阅读次数-->
-
-  <br/>
-  <a class="cloud-tie-join-count" href="javascript:void(0);" style="color:gray;font-size:14px;">
-  <span class="icon-sort"></span>
-  <span id="busuanzi_container_page_pv" style="color:#ef7522;font-size:14px;">
-  	阅读数: <span id="busuanzi_value_page_pv"></span>次 &nbsp;&nbsp;
-  </span>
-  </a>
-
-<!--显示阅读次数完毕-->
-        
-        <a href="/2020/09/05/%E5%B0%8F%E8%AE%B0%EF%BC%9A%E6%B5%85%E8%B0%88ZKW%E7%BA%BF%E6%AE%B5%E6%A0%91/" class="archive-article-date">
-  	<time datetime="2020-09-05T12:12:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-09-05</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
+        <div class="article-info info-on-right">
           
-            <h1 id="PART-1：ZKW线段树的建立"><a href="#PART-1：ZKW线段树的建立" class="headerlink" title="PART 1：ZKW线段树的建立"></a>PART 1：ZKW线段树的建立</h1><p>我们观察一下递归式线段树的代码，很容易就会发现：无论是建树、修改还是查询，都是自顶向下的。</p>
-<p>zkw线段树则正好反过来，即自底向上</p>
-<p>具体来说，就是先把线段树填充成满二叉树（堆式存储），之后就可以直接找到叶节点，然后回溯上去了</p>
-<p>听起来好像很简单QwQ</p>
-<p>其实真的很简单QwQ</p>
-<a id="more"></a>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">build</span><span class="params">(<span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">	<span class="keyword">for</span>(;m&lt;n+<span class="number">1</span>;m&lt;&lt;=<span class="number">1</span>);<span class="comment">//算出m的值</span></span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=m+<span class="number">1</span>;i&lt;=m+n;i++)</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;tree[i]);<span class="comment">//读入数据</span></span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=m<span class="number">-1</span>;i&gt;<span class="number">0</span>;i--)<span class="comment">//遍历父节点</span></span><br><span class="line">		t[i]=t[i&lt;&lt;<span class="number">1</span>]+t[(i&lt;&lt;<span class="number">1</span>)+<span class="number">1</span>];<span class="comment">//记得加括号！！！</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>这样就构造出了一颗二叉树，也就是zkw线段树了！</p>
-<p>是不是特别Easy! </p>
-<p>新技能Get√</p>
-<p>有细心的同学可能发现了：当n为8时，上列计算出的m是16而不是8!</p>
-<p>还有，原数组在线段树对应的为止整体向后平移了1位！</p>
-<p>其实这都是为了方便查找</p>
-<p>后面再详细解释2333</p>
-<h1 id="PART-2-修改-查询"><a href="#PART-2-修改-查询" class="headerlink" title="PART 2:修改+查询"></a>PART 2:修改+查询</h1><h2 id="2-1-单点修改-区间查询"><a href="#2-1-单点修改-区间查询" class="headerlink" title="2.1 单点修改+区间查询"></a>2.1 单点修改+区间查询</h2><h3 id="单点修改（easy）"><a href="#单点修改（easy）" class="headerlink" title="单点修改（easy）"></a>单点修改（easy）</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">change</span><span class="params">(<span class="keyword">int</span> x,<span class="keyword">int</span> v)</span></span>&#123;</span><br><span class="line">	t[x+=m]+=v;</span><br><span class="line">	<span class="keyword">while</span>(x)&#123;</span><br><span class="line">		x&gt;&gt;=<span class="number">1</span>;</span><br><span class="line">		t[x]+=v;</span><br><span class="line">		t[x]=t[x&lt;&lt;<span class="number">1</span>]+t[(x&lt;&lt;<span class="number">1</span>)+<span class="number">1</span>];<span class="comment">//记得加括号！！！</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>就这？Σ(°Д°;</p>
-<p>就这！</p>
-<p>至于单点查询吗，很简单，动用你聪明的大脑自己想一想吧！</p>
-<h3 id="单点修改下的区间查询"><a href="#单点修改下的区间查询" class="headerlink" title="单点修改下的区间查询"></a>单点修改下的区间查询</h3><p>我们以查询[2,6]为例（线段树上的，下同）<br><img src="https://cdn.luogu.com.cn/upload/image_hosting/w41kyrsa.png"></p>
-<h4 id="ans-2-2-3-3-4-4-5-5-6-6"><a href="#ans-2-2-3-3-4-4-5-5-6-6" class="headerlink" title="$ans=[2,2]+[3,3]+[4,4]+[5,5]+[6,6]$"></a>$ans=[2,2]+[3,3]+[4,4]+[5,5]+[6,6]$</h4><p>观察上图可以发现，因为在线段树上我们可以直接找到<br>$[2,3]$和<br>$[4,5]$，所以我们只需要用 $[2,3]$代替$[2,2]$和 $[3,3]$;用 $[4,5]$代替$[4,4]$和 $[5,5]$</p>
-<p>于是</p>
-<h4 id="ans-2-3-4-5-6-6"><a href="#ans-2-3-4-5-6-6" class="headerlink" title="$ans=[2,3]+[4,5]+[6,6]$"></a>$ans=[2,3]+[4,5]+[6,6]$</h4><p>自顶向下求和很简单，怎么实现自底向上的求和呢？</p>
-<p>我们分别在区间左端点-1和右端点+1的位置放两个指针（令其为s,t），就像这样：<br><img src="https://cdn.luogu.com.cn/upload/image_hosting/d5j5mpf6.png"><br>接着不断将s,t移动到对应节点的父节点处，直到s,t指向的节点的父节点相同时停止<br><img src="https://cdn.luogu.com.cn/upload/image_hosting/b2gdowp0.png"><br>此时，如果：</p>
-<ol>
-<li>s指向的节点是左儿子，那么ans += 右儿子的值</li>
-<li>t指向的节点是右儿子，那么ans += 左儿子的值</li>
-</ol>
-<p>如果不能理解就看看上图，多看几遍就懂了$QwQ$</p>
-<p>实在不能理解的话就背下来吧，毕竟代码简单$QuQ$</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">long</span> <span class="keyword">long</span> <span class="title">sum</span><span class="params">(<span class="keyword">int</span> x,<span class="keyword">int</span> y)</span></span>&#123;</span><br><span class="line">	<span class="keyword">long</span> <span class="keyword">long</span> ans=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span>(x=x+m<span class="number">-1</span>,y=y+m+<span class="number">1</span>;x^y^<span class="number">1</span>;x&gt;&gt;=<span class="number">1</span>,y&gt;&gt;=<span class="number">1</span>)&#123;</span><br><span class="line">		<span class="keyword">if</span>(~x&amp;<span class="number">1</span>)</span><br><span class="line">			ans+=t[x^<span class="number">1</span>];</span><br><span class="line">		<span class="keyword">if</span>(y&amp;<span class="number">1</span>)</span><br><span class="line">			ans+=t[y^<span class="number">1</span>];</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>上面的那两个疑问现在可以解释了</p>
-<p>仔细观察上述流程可以发现：我们只能查询$[1,n-1]$范围（这里还是线段树上标的）内的数据</p>
-<p>如果我们想要查询$[0,m]$范围内$(0\leq m\leq n)$的呢？</p>
-<p>将数组整体平移！</p>
-<p>如果我们想要查询[m,n]范围内$(0\leq m\leq n)$的呢？</p>
-<p>把N直接扩大2倍!</p>
-<p><del>zkw：就是这么狠</del></p>
-<p>到目前为止zkw线段树还是比较简短的</p>
-<p>可能有人觉得这个和树状数组有点像，这就对了</p>
-<p>zkw：树状数组究竟是什么？就是省掉一半空间后的线段树加上中序遍历</p>
-<p>Orz</p>
-<h2 id="2-2-区间修改-区间查询"><a href="#2-2-区间修改-区间查询" class="headerlink" title="2.2 区间修改+区间查询"></a>2.2 区间修改+区间查询</h2><h3 id="区间修改——噩梦的开始"><a href="#区间修改——噩梦的开始" class="headerlink" title="区间修改——噩梦的开始"></a>区间修改——噩梦的开始</h3><p>很显然，我们不能用上面的方法暴力修改（还不如递归式线段树）</p>
-<p>其实堆式存储也可以自顶向下访问</p>
-<p>就是上下各走一次而已</p>
-<p>但是我们有更好的办法 <del>zkw:使劲想想就知道了</del></p>
-<p>这里我们采用标记永久化的思想（就是不下推lazy tag让他彻底lazy下去$QWQ$）</p>
-<p>我们需要在自底向上时更新节点的值，所以我们还需要一个变量记录该节点包含元素的个数</p>
-<p>另外要注意修改某个节点的标记时要更新上面的值</p>
-<p>举个例子，我们换一棵树<br><img src="https://cdn.luogu.com.cn/upload/image_hosting/ba1ez5vx.png" alt="图有点糊，请见谅"><br>以修改$[2,10]$为例<br><img src="https://cdn.luogu.com.cn/upload/image_hosting/yod6r60a.png"><br>当s到了$[2,2]$节点时，$[3,3]$节点的add加k，那么接下来$[2,3]$、$[0,3]$节点的值都要加上$k*1$</p>
-<p>而到了$[0,7]$节点时，因为$[4,7]$节点的add加了k，所以$[0,7]$节点的值要加上$k*(1+4)=k*5$，自然k要乘的系数又需要一个变量来记录</p>
-<p>需要注意的是，这次的修改要上推到根节点</p>
-<p>什么，你说还是没理解？</p>
-<p><del>背过呗2333</del></p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">update</span><span class="params">(<span class="keyword">int</span> s,<span class="keyword">int</span> e,<span class="keyword">int</span> k)</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> l=<span class="number">0</span>,r=<span class="number">0</span>,len=<span class="number">1</span>;</span><br><span class="line">	<span class="comment">//l:  s一路走来已经包含了几个数</span></span><br><span class="line">	<span class="comment">//r:  t一路走来已经包含了几个数</span></span><br><span class="line">	<span class="comment">//len:  本层每个节点包含几个数</span></span><br><span class="line">	<span class="keyword">for</span>(s=m+s<span class="number">-1</span>,e=m+e+<span class="number">1</span>;s^e^<span class="number">1</span>;s&gt;&gt;=<span class="number">1</span>,e&gt;&gt;=<span class="number">1</span>,len&lt;&lt;=<span class="number">1</span>)&#123;</span><br><span class="line">		<span class="comment">//更新tree</span></span><br><span class="line">		t[s] += k*l;</span><br><span class="line">		t[e] += k*r;</span><br><span class="line">		<span class="comment">//处理add</span></span><br><span class="line">		<span class="keyword">if</span>(~s&amp;<span class="number">1</span>)&#123;</span><br><span class="line">			add[s^<span class="number">1</span>]+=k;</span><br><span class="line">			t[s^<span class="number">1</span>]+=k*len;</span><br><span class="line">			l+=len;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span>(e&amp;<span class="number">1</span>)&#123;</span><br><span class="line">			add[e^<span class="number">1</span>]+=k; </span><br><span class="line">			t[e^<span class="number">1</span>]+=k*len; </span><br><span class="line">			r+=len;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">//更新上层tree</span></span><br><span class="line">	<span class="keyword">for</span>(;s;s&gt;&gt;=<span class="number">1</span>,e&gt;&gt;=<span class="number">1</span>)&#123;</span><br><span class="line">		t[s]+=k*l;</span><br><span class="line">		t[e]+=k*r;</span><br><span class="line">	&#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="区间修改下的区间查询"><a href="#区间修改下的区间查询" class="headerlink" title="区间修改下的区间查询"></a>区间修改下的区间查询</h3><p>我们以查询[2,10]为例<del>没错还是这张图</del><br><img src="https://cdn.luogu.com.cn/upload/image_hosting/yod6r60a.png"><br>过程类似，要注意s,t每次上推时都要根据当前所在节点的标记和$l/r$更新$ans (ans += add[s]*l)$</p>
-<p>可能有些难懂，多读两遍或者看看代码或者自己手推一下就好了QwQ</p>
-<p>同样，这个也需要上推到根节点</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">sum</span><span class="params">(<span class="keyword">int</span> s,<span class="keyword">int</span> e)</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> l=<span class="number">0</span>,r=<span class="number">0</span>,len=<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">long</span> <span class="keyword">long</span> ans=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span>(s=m+s<span class="number">-1</span>,e=m+e+<span class="number">1</span>; s^e^<span class="number">1</span>;s&gt;&gt;=<span class="number">1</span>,e&gt;&gt;=<span class="number">1</span>,len&lt;&lt;=<span class="number">1</span>)&#123;</span><br><span class="line">		<span class="comment">//根据标记更新</span></span><br><span class="line">		<span class="keyword">if</span>(add[s]) </span><br><span class="line">			ans+=add[s]*l;</span><br><span class="line">		<span class="keyword">if</span>(add[e]) </span><br><span class="line">			ans+=add[e]*r;</span><br><span class="line">		<span class="comment">//常规求和</span></span><br><span class="line">		<span class="keyword">if</span>(~s&amp;<span class="number">1</span>)&#123;</span><br><span class="line">			ans+=t[s^<span class="number">1</span>]; </span><br><span class="line">			l+=len;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span>(e&amp;<span class="number">1</span>)&#123;</span><br><span class="line">			ans+=t[e^<span class="number">1</span>]; </span><br><span class="line">			r+=len;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">//处理上层标记</span></span><br><span class="line">	<span class="keyword">for</span>(;s;s&gt;&gt;=<span class="number">1</span>,e&gt;&gt;=<span class="number">1</span>) &#123;</span><br><span class="line">		ans += add[s]*l;</span><br><span class="line">		ans += add[e]*r;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-          
-        
-    </div>
-    <div class="article-info article-info-index">
-      
-      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -287,7 +207,7 @@
 		</ul>
 	</div>
 
-      
+          
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -300,137 +220,132 @@
 	</div>
 
 
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
         </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2020/09/05/%E5%B0%8F%E8%AE%B0%EF%BC%9A%E6%B5%85%E8%B0%88ZKW%E7%BA%BF%E6%AE%B5%E6%A0%91/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
   
-<nav id="article-nav">
-  
-    <a href="/2020/09/05/%E5%B0%8F%E8%AE%B0%EF%BC%9A%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%88%E6%9B%B4%E6%96%B0%E4%B8%AD%EF%BC%89/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          小记：数据结构（更新中）
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2020/09/05/%E5%B0%8F%E8%AE%B0%EF%BC%9A%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">小记：基础算法</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
+    
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2020/09/05/%E5%B0%8F%E8%AE%B0%EF%BC%9A%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95/" class="archive-article-date">
+  	<time datetime="2020-09-05T12:10:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-09-05</time>
+</a>
         </div>
-        
-        
-    </div>
-</aside>
-
-
-
+    	 
   
-  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2020/09/05/%E5%B0%8F%E8%AE%B0%EF%BC%9A%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95/">小记：基础算法</a>
+    </h1>
   
 
+        <div class="article-info info-on-right">
+          
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">入门</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">小记</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+          
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/小记//" class="article-tag-list-link color3">小记</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+        </div>
+        <div class="clearfix"></div>
+    </header>
+  </div>
+</article>
+  
+    
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2020/09/05/%E5%B0%8F%E8%AE%B0%EF%BC%9A%E4%BB%8E%E6%89%8B%E5%B7%A5%E5%A0%86%E5%88%B0%E7%8E%84%E5%AD%A6%E5%A0%86%E6%8E%92/" class="archive-article-date">
+  	<time datetime="2020-09-05T12:08:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-09-05</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2020/09/05/%E5%B0%8F%E8%AE%B0%EF%BC%9A%E4%BB%8E%E6%89%8B%E5%B7%A5%E5%A0%86%E5%88%B0%E7%8E%84%E5%AD%A6%E5%A0%86%E6%8E%92/">小记：从手工堆到玄学堆排</a>
+    </h1>
   
 
+        <div class="article-info info-on-right">
+          
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">小记</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">堆</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+          
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/小记//" class="article-tag-list-link color3">小记</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+        </div>
+        <div class="clearfix"></div>
+    </header>
+  </div>
+</article>
+  
+  
+    </div></section>
   
 
-  
+    
 
-
-
-
-  <div id="gitalk-container"></div>
-  <div id="gitalk-container" style="padding: 0px 30px 0px 30px;"></div> 
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
-<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
-<script type="text/javascript">
-
-if(true){
-	var gitalk = new Gitalk({
-  	clientID: '4a78cd2e8ede710430fd',
-  	clientSecret: '749c8b19ebfd5427959fd3c5844e39d2b5fdbf93',
-  	repo: 'https://github.com/yxzhjzhhh/PingLunShuJu.git',
-  	owner: 'yxzhjzhhh',
-  	admin: ['[https://github.com/yxzhjzhhh/PingLunShuJu.git,https://github.com/yxzhjzhhh/PingLunShuJu.git]'],
-  	id: 'Sat Sep 05 2020 20:12:37 GMT+0800',
-  	distractionFreeMode: 'true'
-})
-gitalk.render('gitalk-container') 
-}
-</script>
 
           </div>
         </div>
@@ -452,9 +367,9 @@ gitalk.render('gitalk-container')
 	var yiliaConfig = {
 		mathjax: ture,
 		isHome: false,
-		isPost: true,
+		isPost: false,
 		isArchive: false,
-		isTag: false,
+		isTag: true,
 		isCategory: false,
 		open_in_new: true,
 		toc_hide_index: true,
