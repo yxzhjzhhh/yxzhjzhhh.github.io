@@ -8,12 +8,15 @@
   <link rel="dns-prefetch" href="http://example.com">
   <title>信风吹絮的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="个人技术博客">
+<meta property="og:type" content="website">
 <meta property="og:title" content="信风吹絮的博客">
 <meta property="og:url" content="http://example.com/index.html">
 <meta property="og:site_name" content="信风吹絮的博客">
+<meta property="og:description" content="个人技术博客">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="信风吹絮">
+<meta property="article:tag" content="信息学 技术记录">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="信风吹絮的博客" type="application/atom+xml">
@@ -46,15 +49,15 @@
 			<img src="/assets/img/touxiang.jpg" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/"></a></h1>
+		  <h1 class="header-author"><a href="/">信风吹絮</a></h1>
 		</hgroup>
 		
 		<nav class="header-nav">
 			<div class="social">
 				
-					<a class="qq" target="_blank" href="/3121306599" title="qq"><i class="icon-qq"></i></a>
+					<a class="github" target="_blank" href="https://github.com/yxzhjzhhh" title="github"><i class="icon-github"></i></a>
 		        
-					<a class="mail" target="_blank" href="/312130@qq.com" title="mail"><i class="icon-mail"></i></a>
+					<a class="qq" target="_blank" href="https://user.qzone.qq.com/3121306599/main" title="qq"><i class="icon-qq"></i></a>
 		        
 			</div>
 		</nav>
@@ -63,6 +66,10 @@
 			<ul>
 			
 				<li><a target="_blank" rel="noopener" href="https://yxzhjzhhh.github.io/">主页</a></li>
+	        
+				<li><a href="/archives">归档</a></li>
+	        
+				<li><a href="/categories">分类</a></li>
 	        
 			</ul>
 		</nav>
@@ -111,10 +118,14 @@
 				<img src="/assets/img/touxiang.jpg" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author"></h1>
+			  <h1 class="header-author js-header-author">信风吹絮</h1>
 			</hgroup>
 			
 			
+			
+				
+			
+				
 			
 				
 			
@@ -123,18 +134,22 @@
 			<nav class="header-nav">
 				<div class="social">
 					
-						<a class="qq" target="_blank" href="/3121306599" title="qq"><i class="icon-qq"></i></a>
+						<a class="github" target="_blank" href="https://github.com/yxzhjzhhh" title="github"><i class="icon-github"></i></a>
 			        
-						<a class="mail" target="_blank" href="/312130@qq.com" title="mail"><i class="icon-mail"></i></a>
+						<a class="qq" target="_blank" href="https://user.qzone.qq.com/3121306599/main" title="qq"><i class="icon-qq"></i></a>
 			        
 				</div>
 			</nav>
 
 			<nav class="header-menu js-header-menu">
-				<ul style="width: 50%">
+				<ul style="width: 70%">
 				
 				
-					<li style="width: 100%"><a target="_blank" rel="noopener" href="https://yxzhjzhhh.github.io/">主页</a></li>
+					<li style="width: 33.333333333333336%"><a target="_blank" rel="noopener" href="https://yxzhjzhhh.github.io/">主页</a></li>
+		        
+					<li style="width: 33.333333333333336%"><a href="/archives">归档</a></li>
+		        
+					<li style="width: 33.333333333333336%"><a href="/categories">分类</a></li>
 		        
 				</ul>
 			</nav>
@@ -174,14 +189,13 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P1809">P1809 过河问题</a></p>
+        
+          		<p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P1809">P1809 过河问题</a></p>
 <h2 id="题意："><a href="#题意：" class="headerlink" title="题意："></a>题意：</h2><pre><code>   有一艘核载2人的小船，将所有人运到对岸，用时按时间长的算，求最短时间。</code></pre>
 <h2 id="方法一：贪心"><a href="#方法一：贪心" class="headerlink" title="方法一：贪心"></a>方法一：贪心</h2><p>从题目描述中我们很容易想到贪心算法</p>
 <p>即每次都让速度最快的人带上速度最慢的人，放下速度最慢的人后自己回来。</p>
+          
         
-      
-
-      
     </div>
     <div class="article-info article-info-index">
       
@@ -198,6 +212,17 @@
 	</div>
 
       
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/题解//" class="article-tag-list-link color3">题解</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 
       
         <p class="article-more-link">
@@ -277,13 +302,12 @@ gitalk.render('gitalk-container')
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>这是一道很简单的DP题，我却在采访同学们的时候发现了三种方法。</p>
+        
+          		<p>这是一道很简单的DP题，我却在采访同学们的时候发现了三种方法。</p>
 <h1 id="1-贪心"><a href="#1-贪心" class="headerlink" title="1.贪心"></a>1.贪心</h1><p>用贪心算法设计算法的特点<strong>是一步一步地进行，常以当前情况为基础根据某个优化测度作最优选择，而不考虑各种可能的整体情况。</strong></p>
 <p>但他并不适合这道题。</p>
+          
         
-      
-
-      
     </div>
     <div class="article-info article-info-index">
       
@@ -300,6 +324,17 @@ gitalk.render('gitalk-container')
 	</div>
 
       
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/题解//" class="article-tag-list-link color3">题解</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 
       
         <p class="article-more-link">
@@ -379,15 +414,14 @@ gitalk.render('gitalk-container')
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>next_permutation(数组开始，数组结束)</p>
+        
+          		<p>next_permutation(数组开始，数组结束)</p>
 <p>作用：求字典序排列</p>
 <p>如$a[5]={1,2,3,4,5}$进行next_permutation(a,a+5)后变为$a[5]={1,2,3,5,4}$</p>
 <p>再进行一次后变为$a[5]={1,2,4,3,5}$</p>
 <p>若已经是最后一种状态，则返回0</p>
+          
         
-      
-
-      
     </div>
     <div class="article-info article-info-index">
       
@@ -404,6 +438,17 @@ gitalk.render('gitalk-container')
 	</div>
 
       
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/小记//" class="article-tag-list-link color3">小记</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 
       
         <p class="article-more-link">
@@ -483,11 +528,10 @@ gitalk.render('gitalk-container')
     
     <div class="article-entry" itemprop="articleBody">
       
-        <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">写在前面</span><br><span class="line">	数据结构者，计算之储存之术也，实乃重中之重。故作此篇，记述吾所知之数据结构，以彰其明。</span><br></pre></td></tr></table></figure>
         
-      
-
-      
+          		<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">写在前面</span><br><span class="line">	数据结构者，计算之储存之术也，实乃重中之重。故作此篇，记述吾所知之数据结构，以彰其明。</span><br></pre></td></tr></table></figure>
+          
+        
     </div>
     <div class="article-info article-info-index">
       
@@ -504,6 +548,17 @@ gitalk.render('gitalk-container')
 	</div>
 
       
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/小记//" class="article-tag-list-link color3">小记</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 
       
         <p class="article-more-link">
@@ -583,15 +638,14 @@ gitalk.render('gitalk-container')
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="PART-1：ZKW线段树的建立"><a href="#PART-1：ZKW线段树的建立" class="headerlink" title="PART 1：ZKW线段树的建立"></a>PART 1：ZKW线段树的建立</h1><p>我们观察一下递归式线段树的代码，很容易就会发现：无论是建树、修改还是查询，都是自顶向下的。</p>
+        
+          		<h1 id="PART-1：ZKW线段树的建立"><a href="#PART-1：ZKW线段树的建立" class="headerlink" title="PART 1：ZKW线段树的建立"></a>PART 1：ZKW线段树的建立</h1><p>我们观察一下递归式线段树的代码，很容易就会发现：无论是建树、修改还是查询，都是自顶向下的。</p>
 <p>zkw线段树则正好反过来，即自底向上</p>
 <p>具体来说，就是先把线段树填充成满二叉树（堆式存储），之后就可以直接找到叶节点，然后回溯上去了</p>
 <p>听起来好像很简单QwQ</p>
 <p>其实真的很简单QwQ</p>
+          
         
-      
-
-      
     </div>
     <div class="article-info article-info-index">
       
@@ -608,6 +662,17 @@ gitalk.render('gitalk-container')
 	</div>
 
       
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/小记//" class="article-tag-list-link color3">小记</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 
       
         <p class="article-more-link">
@@ -687,11 +752,10 @@ gitalk.render('gitalk-container')
     
     <div class="article-entry" itemprop="articleBody">
       
-        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">写在前面:</span><br><span class="line">	昨夜于济南,偶遇dsy，交谈甚欢。谈及基础之法，其以为重中之重，余深以为然。故作此篇，以梳基础算法，兼怀dsy。</span><br></pre></td></tr></table></figure>
         
-      
-
-      
+          		<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">写在前面:</span><br><span class="line">	昨夜于济南,偶遇dsy，交谈甚欢。谈及基础之法，其以为重中之重，余深以为然。故作此篇，以梳基础算法，兼怀dsy。</span><br></pre></td></tr></table></figure>
+          
+        
     </div>
     <div class="article-info article-info-index">
       
@@ -708,6 +772,17 @@ gitalk.render('gitalk-container')
 	</div>
 
       
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/小记//" class="article-tag-list-link color3">小记</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 
       
         <p class="article-more-link">
@@ -787,11 +862,10 @@ gitalk.render('gitalk-container')
     
     <div class="article-entry" itemprop="articleBody">
       
-        <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">写在前面：</span><br><span class="line">	STL者，标准模板库也。海纳百川，无所不包。向前吾乃不知堆于其中，甚惭。作此篇，以勉自身。</span><br></pre></td></tr></table></figure>
         
-      
-
-      
+          		<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">写在前面：</span><br><span class="line">	STL者，标准模板库也。海纳百川，无所不包。向前吾乃不知堆于其中，甚惭。作此篇，以勉自身。</span><br></pre></td></tr></table></figure>
+          
+        
     </div>
     <div class="article-info article-info-index">
       
@@ -808,6 +882,17 @@ gitalk.render('gitalk-container')
 	</div>
 
       
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/小记//" class="article-tag-list-link color3">小记</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 
       
         <p class="article-more-link">
@@ -887,14 +972,13 @@ gitalk.render('gitalk-container')
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="详见"><a href="#详见" class="headerlink" title="详见"></a><a target="_blank" rel="noopener" href="https://blog.csdn.net/lengxuenong/article/details/84634267#P1508_likecloud_742">详见</a></h1><h3 id="背包问题"><a href="#背包问题" class="headerlink" title="背包问题"></a>背包问题</h3><h4 id="01背包"><a href="#01背包" class="headerlink" title="01背包"></a>01背包</h4><p>（待处理）P1489 猫狗大战</p>
+        
+          		<h1 id="详见"><a href="#详见" class="headerlink" title="详见"></a><a target="_blank" rel="noopener" href="https://blog.csdn.net/lengxuenong/article/details/84634267#P1508_likecloud_742">详见</a></h1><h3 id="背包问题"><a href="#背包问题" class="headerlink" title="背包问题"></a>背包问题</h3><h4 id="01背包"><a href="#01背包" class="headerlink" title="01背包"></a>01背包</h4><p>（待处理）P1489 猫狗大战</p>
 <p>01背包的空间优化问题</p>
 <p>P1048 采药</p>
 <p>P1510 精卫填海</p>
+          
         
-      
-
-      
     </div>
     <div class="article-info article-info-index">
       
@@ -911,6 +995,17 @@ gitalk.render('gitalk-container')
 	</div>
 
       
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/题单//" class="article-tag-list-link color3">题单</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 
       
         <p class="article-more-link">
@@ -1081,15 +1176,15 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">题解</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">小记</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">题单</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">题解</a>
               </li>
             
             <div class="clearfix"></div>
