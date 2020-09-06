@@ -6,20 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>计划题单 | 信风吹絮的博客</title>
+  <title>P1809 过河问题题解 | 信风吹絮的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="详见背包问题01背包（待处理）P1489 猫狗大战 01背包的空间优化问题 P1048 采药 P1510 精卫填海">
+  <meta name="description" content="P1809 过河问题 题意：   有一艘核载2人的小船，将所有人运到对岸，用时按时间长的算，求最短时间。 方法一：贪心从题目描述中我们很容易想到贪心算法 即每次都让速度最快的人带上速度最慢的人，放下速度最慢的人后自己回来。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="计划题单">
-<meta property="og:url" content="http://example.com/2020/09/05/%E8%AE%A1%E5%88%92%E9%A2%98%E5%8D%95/index.html">
+<meta property="og:title" content="P1809 过河问题题解">
+<meta property="og:url" content="http://example.com/2020/09/06/P1809-%E8%BF%87%E6%B2%B3%E9%97%AE%E9%A2%98%E9%A2%98%E8%A7%A3/index.html">
 <meta property="og:site_name" content="信风吹絮的博客">
-<meta property="og:description" content="详见背包问题01背包（待处理）P1489 猫狗大战 01背包的空间优化问题 P1048 采药 P1510 精卫填海">
+<meta property="og:description" content="P1809 过河问题 题意：   有一艘核载2人的小船，将所有人运到对岸，用时按时间长的算，求最短时间。 方法一：贪心从题目描述中我们很容易想到贪心算法 即每次都让速度最快的人带上速度最慢的人，放下速度最慢的人后自己回来。">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-09-04T23:52:32.000Z">
-<meta property="article:modified_time" content="2020-09-06T01:38:49.733Z">
+<meta property="og:image" content="https://cdn.luogu.com.cn/upload/image_hosting/b4bp53as.png">
+<meta property="article:published_time" content="2020-09-06T01:35:26.000Z">
+<meta property="article:modified_time" content="2020-09-06T01:37:06.646Z">
 <meta property="article:author" content="信风吹絮">
-<meta property="article:tag" content="题单">
+<meta property="article:tag" content="题解">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.luogu.com.cn/upload/image_hosting/b4bp53as.png">
   
     <link rel="alternative" href="/atom.xml" title="信风吹絮的博客" type="application/atom+xml">
   
@@ -154,14 +156,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-计划题单" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-P1809-过河问题题解" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      计划题单
+      P1809 过河问题题解
     </h1>
   
 
@@ -177,107 +179,48 @@
 
 <!--显示阅读次数完毕-->
         
-        <a href="/2020/09/05/%E8%AE%A1%E5%88%92%E9%A2%98%E5%8D%95/" class="archive-article-date">
-  	<time datetime="2020-09-04T23:52:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-09-05</time>
+        <a href="/2020/09/06/P1809-%E8%BF%87%E6%B2%B3%E9%97%AE%E9%A2%98%E9%A2%98%E8%A7%A3/" class="archive-article-date">
+  	<time datetime="2020-09-06T01:35:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-09-06</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="详见"><a href="#详见" class="headerlink" title="详见"></a><a target="_blank" rel="noopener" href="https://blog.csdn.net/lengxuenong/article/details/84634267#P1508_likecloud_742">详见</a></h1><h3 id="背包问题"><a href="#背包问题" class="headerlink" title="背包问题"></a>背包问题</h3><h4 id="01背包"><a href="#01背包" class="headerlink" title="01背包"></a>01背包</h4><p>（待处理）P1489 猫狗大战</p>
-<p>01背包的空间优化问题</p>
-<p>P1048 采药</p>
-<p>P1510 精卫填海</p>
+        <p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P1809">P1809 过河问题</a></p>
+<h2 id="题意："><a href="#题意：" class="headerlink" title="题意："></a>题意：</h2><pre><code>   有一艘核载2人的小船，将所有人运到对岸，用时按时间长的算，求最短时间。</code></pre>
+<h2 id="方法一：贪心"><a href="#方法一：贪心" class="headerlink" title="方法一：贪心"></a>方法一：贪心</h2><p>从题目描述中我们很容易想到贪心算法</p>
+<p>即每次都让速度最快的人带上速度最慢的人，放下速度最慢的人后自己回来。</p>
 <a id="more"></a>
 
-<p>P1566 加等式</p>
-<p>P1504 积木城堡</p>
-<h4 id="完全背包"><a href="#完全背包" class="headerlink" title="完全背包"></a>完全背包</h4><p>P1474 货币系统</p>
-<p>P2904 River Crossing</p>
-<p>P2725 Stamps</p>
-<h4 id="分组背包"><a href="#分组背包" class="headerlink" title="分组背包"></a>分组背包</h4><p>P2409 Y的积木</p>
-<p>P2066 机器分配</p>
-<h4 id="二维费用背包"><a href="#二维费用背包" class="headerlink" title="二维费用背包"></a>二维费用背包</h4><p>P1759 通天之潜水</p>
-<p>P1586 四方定理</p>
-<h4 id="依赖背包"><a href="#依赖背包" class="headerlink" title="依赖背包"></a>依赖背包</h4><p>P1064 金明的预算方案</p>
-<h4 id="混合背包"><a href="#混合背包" class="headerlink" title="混合背包"></a>混合背包</h4><p>P2623 物品选取</p>
-<h3 id="DP"><a href="#DP" class="headerlink" title="DP"></a>DP</h3><h4 id="坐标DP"><a href="#坐标DP" class="headerlink" title="坐标DP"></a>坐标DP</h4><p>P1434 滑雪</p>
-<p>P1004 方格取数</p>
-<p>Codevs 2853 方格游戏</p>
-<p>P1508 likecloud</p>
-<p>P2049 魔术棋子</p>
-<h4 id="线性DP"><a href="#线性DP" class="headerlink" title="线性DP"></a>线性DP</h4><p>P1057 传球游戏</p>
-<p>P1754 球迷购票问题</p>
-<p>P1095 守望者的逃离</p>
-<p>P3399 丝绸之路</p>
-<p>P1387 最大正方形</p>
-<p>P1681 最大正方形2</p>
-<p>P2004 领地选择</p>
-<p>P2072 宗教问题</p>
-<p>P1564 膜拜</p>
-<p>（待处理）P2896 一起吃饭</p>
-<p>（待处理）P1970 花匠</p>
-<p>（待处理）P1133 教主的花园</p>
-<p>（待处理）P1233 木棍加工</p>
-<h4 id="（待处理）区间DP"><a href="#（待处理）区间DP" class="headerlink" title="（待处理）区间DP"></a>（待处理）区间DP</h4><p>P2426 删数</p>
-<p>P2858 Treats for the cows</p>
-<p>P1435 回文子串</p>
-<p>P4302 字符串折叠</p>
-<p>P2466 Sue的小球</p>
-<p>P1220 关路灯</p>
-<p>P2470 压缩</p>
-<h4 id="二分答案-DP"><a href="#二分答案-DP" class="headerlink" title="二分答案+DP"></a>二分答案+DP</h4><p>P2370 yyy2015c01的U盘</p>
-<p>（待处理）P3957 跳房子</p>
-<h4 id="悬线法DP"><a href="#悬线法DP" class="headerlink" title="悬线法DP"></a>悬线法DP</h4><p>P4147 玉蟾宫</p>
-<p>P1387 最大正方形</p>
-<p>P1736 创意吃鱼法</p>
-<p>P1169 棋盘制作</p>
-<h4 id="（待处理）高维DP"><a href="#（待处理）高维DP" class="headerlink" title="（待处理）高维DP"></a>（待处理）高维DP</h4><p>P1436 棋盘分割</p>
-<p>P2489 迷宫冒险</p>
-<h4 id="（待处理）树形DP"><a href="#（待处理）树形DP" class="headerlink" title="（待处理）树形DP"></a>（待处理）树形DP</h4><p>树的重心</p>
-<h4 id="（待处理）数位DP"><a href="#（待处理）数位DP" class="headerlink" title="（待处理）数位DP"></a>（待处理）数位DP</h4><p>P2657 windy数</p>
-<p>P2518 计数</p>
-<p>P2602 数字计数</p>
-<p>P4124 手机号码</p>
-<h3 id="单调队列"><a href="#单调队列" class="headerlink" title="单调队列"></a>单调队列</h3><p>P1886 滑动窗口</p>
-<p>P1440 求m区间内的最小值</p>
-<p>P2627 修剪草坪</p>
-<p>（待处理）P3957 跳房子</p>
-<p>（待处理）P2216 理想的正方形</p>
-<h3 id="单调栈"><a href="#单调栈" class="headerlink" title="单调栈"></a>单调栈</h3><p>P2782 友好城市</p>
-<p>P2866 Bad Hair Day</p>
-<p>P2947 Look Up</p>
-<p>P4147 玉蟾宫</p>
-<p>P3467 PLA-Postering</p>
-<p>（待处理）P3503 KLO-Blocks</p>
-<p>（不会做，弃疗）P1565 牛宫</p>
-<p>（该题有BUG，弃疗）P1823 音乐会的等待</p>
-<h3 id="状态压缩"><a href="#状态压缩" class="headerlink" title="状态压缩"></a>状态压缩</h3><p>P2879 玉米田</p>
-<p>P2704 炮兵阵地</p>
-<p>P1896 互不侵犯</p>
-<p>P3092 没有找零</p>
-<p>P2915 Make up Cows</p>
-<p>P3052 Cows in Skyscraper</p>
-<p>P1171 售货员的难题</p>
-<p>P3118 电影移动</p>
-<p>（待处理）P3694 邦邦的大合唱站队</p>
-<p>（待处理）P2622 关灯问题</p>
-<p>（待处理）P2051 中国象棋</p>
-<p>（待处理）P3959 宝藏</p>
-<p>（待处理）P2595 多米诺骨牌</p>
-<p>（待处理）P2453 最短距离</p>
-<p>（待处理）P2167 Bill的挑战</p>
-<p>（待处理）POJ 2411 Mondriaan’s Dream</p>
-<p>（待处理）轮廓线DP</p>
-<p>P2595 多米诺骨牌</p>
-<p>POJ 2411 Mondriaan’s Dream</p>
-<h3 id="（待处理）博弈论"><a href="#（待处理）博弈论" class="headerlink" title="（待处理）博弈论"></a>（待处理）博弈论</h3><p>P1199 三国游戏</p>
-<p>P1488 肥猫的游戏</p>
-<p>P2197 NIM游戏</p>
-<p>P1288 取数游戏2</p>
+<p>由此，我们得到：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=n<span class="number">-1</span>;i&gt;<span class="number">0</span>;i--)&#123;</span><br><span class="line">    ans+=a[<span class="number">0</span>];</span><br><span class="line">    ans+=a[i];</span><br><span class="line">&#125;</span><br><span class="line">ans-=a[<span class="number">0</span>]</span><br></pre></td></tr></table></figure>
+<p>如果你真的这么做了，那么<br><img src="https://cdn.luogu.com.cn/upload/image_hosting/b4bp53as.png"><br>为什么呢？让我们分情况讨论一下：</p>
+<p>当只有一个人的时候，$ans=a[1]$。</p>
+<p>当有两个人的时候，$ans=a[2]$</p>
+<p>当有三个人的时候，$ans=a[1]+a[2]+a[3]$</p>
+<p>当有四个人的时候，让我们看一下样例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">4</span><br><span class="line">6 7 10 15</span><br></pre></td></tr></table></figure>
+<p>将他们编号为$1&amp;nbsp 2&amp;nbsp 3&amp;nbsp 4$</p>
+<p>我们肯定要保证$1$ $2$最后过，不然会造成船返回时的浪费。</p>
+<p><strong>那么首先我们先让$1$ $2$过去</strong></p>
+<p>（不是说让$1$ $2$最后过吗，<del>啪啪打脸</del>）</p>
+<p>（其实先让$1$ $2$过是有原因的，原因我们下面再讲）</p>
+<p><strong>然后让$1$将船开回来</strong></p>
+<p><strong>接着让$3$和$4$（最慢者和次慢者）开船去对岸</strong></p>
+<p><strong>最后让$2$将船开回来</strong></p>
+<p>所以想让$1$ $2$过的原因很简单：如果让最慢者和次慢者先过，谁把船开回来呢？</p>
+<p>在这种方法下，$ans=a[1]+a[2]\times2+a[4]$</p>
 <hr>
-
+<p>由此，我们将每次运送分为了两种情况：</p>
+<ol>
+<li><p><strong>最快者分两次将最慢者和次慢者送到对岸，用时为：$a[1]\times2+a[n]+a[n-1]$</strong></p>
+</li>
+<li><p><strong>最快者与次快者先去<br>，最快者返回，最慢者和次慢者去对岸，次慢者乘船返回，用时为：$a[1]+a[2]\times2+a[n]$</strong></p>
+</li>
+</ol>
+<p>最后代码呈上：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;math.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> a[<span class="number">100009</span>];</span><br><span class="line"><span class="keyword">long</span> <span class="keyword">long</span> ans=<span class="number">0</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> n;</span><br><span class="line">    <span class="built_in">cin</span>&gt;&gt;n;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">        <span class="built_in">cin</span>&gt;&gt;a[i]; </span><br><span class="line">    sort(a+<span class="number">1</span>,a+n+<span class="number">1</span>);<span class="comment">//别忘了排序 </span></span><br><span class="line">    <span class="keyword">for</span>(n;n&gt;=<span class="number">4</span>;n-=<span class="number">2</span>)<span class="comment">//每次将最慢的二人送过去 </span></span><br><span class="line">    	ans+=min(a[<span class="number">1</span>]*<span class="number">2</span>+a[n]+a[n<span class="number">-1</span>],a[<span class="number">1</span>]+a[<span class="number">2</span>]*<span class="number">2</span>+a[n]);<span class="comment">//比较方案一，方案二 </span></span><br><span class="line">    <span class="keyword">if</span>(n==<span class="number">1</span>||n==<span class="number">2</span>)<span class="comment">//n==1为特判 </span></span><br><span class="line">    	ans+=a[n];</span><br><span class="line">    <span class="keyword">if</span>(n==<span class="number">3</span>)</span><br><span class="line">    	ans+=(a[<span class="number">1</span>]+a[<span class="number">2</span>]+a[<span class="number">3</span>]);</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;ans&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
 
       
@@ -311,7 +254,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">题单</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">题解</a>
         		</li>
       		
 		</ul>
@@ -367,7 +310,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2020/09/05/%E8%AE%A1%E5%88%92%E9%A2%98%E5%8D%95/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2020/09/06/P1809-%E8%BF%87%E6%B2%B3%E9%97%AE%E9%A2%98%E9%A2%98%E8%A7%A3/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -381,15 +324,11 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/09/05/%E5%B0%8F%E8%AE%B0%EF%BC%9A%E4%BB%8E%E6%89%8B%E5%B7%A5%E5%A0%86%E5%88%B0%E7%8E%84%E5%AD%A6%E5%A0%86%E6%8E%92/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          小记：从手工堆到玄学堆排
-        
-      </div>
-    </a>
   
+    <a href="/2020/09/05/P1216-IOI1994-USACO1-5-%E6%95%B0%E5%AD%97%E4%B8%89%E8%A7%92%E5%BD%A2-Number-Triangles%E9%A2%98%E8%A7%A3/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">P1216 [IOI1994][USACO1.5]数字三角形 Number Triangles题解</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
@@ -455,7 +394,7 @@ if(true){
   	repo: 'https://github.com/yxzhjzhhh/PingLunShuJu.git',
   	owner: 'yxzhjzhhh',
   	admin: ['[https://github.com/yxzhjzhhh/PingLunShuJu.git,https://github.com/yxzhjzhhh/PingLunShuJu.git]'],
-  	id: 'Sat Sep 05 2020 07:52:32 GMT+0800',
+  	id: 'Sun Sep 06 2020 09:35:26 GMT+0800',
   	distractionFreeMode: 'true'
 })
 gitalk.render('gitalk-container') 
